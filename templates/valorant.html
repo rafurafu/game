@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/static/valorant.css">
+        <script src="/static/js/search.js"></script>
+        <title>snsマッチ</title>
+    </head>
+    <body>
+        <div class="container">
+            <div class="header">
+              {% include 'header.html' %}
+            </div>
+    
+            <main role="main" id="main">    
+                <aside id="submenu" class="sidebar-left">
+                    
+                </aside>
+    
+                <article id="content" class="tweets">
+                    <!-- 投稿一覧 -->
+                    <div class="tweet">
+                        <div class="user-info">
+                            <img src="avatar.jpg" alt="User Avatar">
+                            <div class="user-details">
+                                <span class="username">ユーザー名</span>
+                                <span class="handle">@ハンドル</span>
+                            </div>
+                        </div>
+                        <p class="tweet-text">投稿の本文がここに入ります。なんでもいいです。</p>
+                        <div class="actions">
+                            <button class="like-btn">いいね</button>
+                            <button class="reply-btn">返信</button>
+                        </div>
+                    </div>
+                    <!-- 他の投稿をここに追加 -->
+                </article>
+    
+                <!-- 右サイドバー（ツイートフォーム）-->
+                <div id="topic" class="sidebar-right">
+                    <div class="tweet-form">
+                        <div class="user-info">
+                            <h3>ユーザー情報</h3>
+                            <label for="role">役割：</label>
+                            <input type="text" id="role" placeholder="あなたの役割を入力してください">
+        
+                            <label for="number">募集する人数：</label>
+                            <input type="text" id="number" placeholder="募集する人数を入力してください">
+        
+                            <label for="rank">ランク：</label>
+                            <input type="text" id="rank" placeholder="あなたのランクを入力してください">
+                        </div>
+        
+                        <textarea id="tweetText" placeholder="何か一言追加しましょう..."></textarea>
+                        <button class="tweet-button" onclick="addTweet()">投稿</button>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </body>
+    </html>

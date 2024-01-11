@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/static/home.css">
+        <script src="/static/js/home.js"></script>
+        <title>ゲームマッチングサイト</title>
+    </head>
+    <body>
+        {% include 'header.html' %}
+    
+        <section id="game-selection" class="container">
+            <h1>ゲームを選択</h1>
+            <form action="/game-recruitment" method="post">
+                <label for="game">ゲーム：</label>
+                <select id="game" name="game" required>
+                    <option value="" disabled selected>ゲームを選択してください</option>
+                    <option value="game1">VALORANT</option>
+                    <option value="game2">Genshin impact</option>
+                    <option value="game3">Escape from tarkov</option>
+                    <!-- 他のゲームをここに追加 -->
+                </select>
+                <button type="submit">次へ</button>
+            </form>
+        </section>
+    
+        <section id="home">
+            <h2>ようこそ！</h2>
+            <p>ウェブサイトの素晴らしいコンテンツをお楽しみください。</p>
+        </section>
+    
+        <section id="about">
+            <h2>チャット</h2>
+            <p>ああああああああああ</p>
+        </section>
+    
+        <section id="services">
+            <h1>おすすめデバイス</h1>
+            <p>人気のデバイスや購入が多いデバイスを表示しています</p>
+            <a href="https://amzn.asia/d/18tEoW4" target="_blank">
+                <img src="amazon_logo.png" alt="Amazonロゴ">
+                <p>Logicool G PRO ゲーミングキーボード</p>
+            </a>
+            <a href="https://amzn.asia/d/amMA5xR" target="_blank">
+                <img src="amazon_logo.png" alt="Amazonロゴ">
+                <p>Logicool G PRO X SUPERLIGHT 2 ワイヤレス ゲーミングマウス</p>
+            </a>
+            <a href="https://amzn.asia/d/fQ0IRtq" target="_blank">
+                <img src="amazon_logo.png" alt="Amazonロゴ">
+                <p>SteelSeries ゲーミングマウスパッド 大型</p>
+            </a>
+        </section>
+    
+        <section id="contact">
+            <h1>お問い合わせフォーム</h1>
+            <form action="submit_form.php" method="post">
+                <label for="name">お名前：</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">メールアドレス：</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">お問い合わせ内容：</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+                <input type="submit" value="送信">
+            </form>
+        </section>
+    
+        <section id="gallery">
+            <h2>ギャラリー</h2>
+            <div class="gallery-container">
+                <div class="gallery-item">
+                    <a href="game1.html">
+                        <img src="gallery_image1.jpg" alt="Gallery Image 1">
+                        <p>プロジェクト1</p>
+                    </a>
+                </div>
+                <div class="gallery-item">
+                    <a href="game2.html">
+                        <img src="gallery_image2.jpg" alt="Gallery Image 2">
+                        <p>プロジェクト2</p>
+                    </a>
+                </div>
+                <!-- 他のギャラリーアイテムをここに追加 -->
+            </div>
+        </section>
+    
+        <footer>
+            <p>&copy; 2024 ゲームマッチングサイト</p>
+        </footer>
+    
+    </body>
+    </html>

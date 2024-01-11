@@ -1,0 +1,55 @@
+/* Header Styles */
+header {
+    background-color: #50d21f;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+nav ul li.logout {
+    margin-left: auto; /* ボタンを右寄せにするためのスタイル */
+}
+
+nav a.logout {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 15px;
+    background-color: #e74c3c; /* ボタンの背景色 */
+    border-radius: 5px;
+}
+
+nav a.logout:hover {
+    background-color: #c0392b; /* マウスホバー時の背景色 */
+}
+
+.logout-btn {
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    margin-left: auto;
+  }
+  
+  .logout-btn:hover {
+    background-color: #555;
+  }
+  
